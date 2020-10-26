@@ -19,10 +19,10 @@ const output = `<ref>{{뉴스 인용
   | newspaper = ${newspaper}
   | author = ${author}
 }}</ref>`;
-console.log(output);
 
 const $output = document.createElement('textarea');
 $output.innerHTML = output;
 $output.setAttribute('rows', 8);
 document.body.append($output);
+$output.onclick = (e) => $output.select();
 $output.select();
