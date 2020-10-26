@@ -1,0 +1,16 @@
+{
+  "name": "citoid-womennews",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Lens0021 <lorentz0021@gmail.com>",
+  "content_scripts": [
+    {
+      "matches": ["*://www.womennews.co.kr/*"],
+      "js": ["index.js"]
+    }
+  ],
+  "permissions": [
+    "*://www.womennews.co.kr/*"
+  ],
+  "manifest_version": 2
+}
